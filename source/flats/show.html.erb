@@ -1,0 +1,38 @@
+<div class="sm_banner">
+<%= image_tag "  https://picsum.photos/200/300/?random", class: "small_banner" %>
+
+</div>
+
+<div class="header-flat">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+        <!-- Access data.flats with owner's name as key -->
+        <% flat = data.flats[owner] %>
+
+        <!-- Inject flat data in template -->
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+        <p><%= flat.name %></p>
+        <h1><%= flat.description %></h1>
+        <p><%= flat.city_name %></p>
+
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="description">
+  <h2>About this place</h2>
+  <p>Amount of pets:<%= flat.amount_of_pets %></p>
+  <p>City:<%= flat.city_slug %></p>
+  <p>Wifi:<%= flat.wifi %></p>
+  <p>Restaurants around:<%= flat.restaurants_around %></p>
+  <p>Flat owner:<%= flat.owner %></p>
+</div>
+
+
+
+
