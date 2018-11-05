@@ -1,6 +1,7 @@
 ---
 title: Le Wagon - Middleman
 ---
+    <%= partial "layouts/navbar" %>
 
 <div id="home">
   <div class="home-content">
@@ -8,8 +9,19 @@ title: Le Wagon - Middleman
     <p>
       Middleman is now running!
     </p>
+
+
     <p class="about">
       <%= link_to "More about this template", "about.html" %>
     </p>
   </div>
 </div>
+
+<div>
+<%= partial "layouts/cards" %>
+</div>
+<div>
+<%= partial "layouts/banner" %>
+</div>
+
+<%= partial "layouts/footer" %>
